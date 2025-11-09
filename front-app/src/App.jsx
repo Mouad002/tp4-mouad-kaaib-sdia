@@ -1,17 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import './App.css'
-import { Route, Router, Routes } from 'react-router-dom'
+import NavbarLayout from './components/NavbarLayout'
+import ConferenceList from './components/ConferenceList'
+import KeynotesList from './components/KeynotesList'
 
 function App() {
 
   return (
-    <Router>
-      <Routes>
-        <Route/>
-      </Routes>
-    </Router>
+      <BrowserRouter>
+        <Routes>
+          <Route path='/' element={<NavbarLayout/>}>
+            <Route path='conferences' element={<ConferenceList/>}/>
+            <Route path='keynotes' element={<KeynotesList/>}/>
+          </Route>
+        </Routes>
+      </BrowserRouter>
   )
 }
 

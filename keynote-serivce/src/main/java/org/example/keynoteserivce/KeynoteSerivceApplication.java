@@ -1,6 +1,6 @@
 package org.example.keynoteserivce;
 
-import org.example.keynoteserivce.entities.Keynote;
+import org.example.keynoteserivce.entity.Keynote;
 import org.example.keynoteserivce.repository.KeynoteRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;

@@ -1,6 +1,6 @@
-package org.example.conferenceservice.repositories;
+package org.example.conferenceservice.repository;
 
-import org.example.conferenceservice.entities.Review;
+import org.example.conferenceservice.entity.Review;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.rest.core.annotation.RepositoryRestResource;
 

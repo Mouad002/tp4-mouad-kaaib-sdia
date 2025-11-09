@@ -1,19 +1,14 @@
-package org.example.keynoteserivce.entities;
+package org.example.conferenceservice.entity;
 
-import jakarta.persistence.*;
 import lombok.*;
-import java.util.List;
 
-@Entity
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
 public class Keynote {
 
-    @Id
     private String id;
-
     private String firstName;
     private String lastName;
     private String email;

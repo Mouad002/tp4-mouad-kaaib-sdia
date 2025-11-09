@@ -1,4 +1,4 @@
-package org.example.conferenceservice.entities;
+package org.example.conferenceservice.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
@@ -24,6 +24,7 @@ public class Conference {
     private int duration;
     private int inscriptionNumber;
     private double score;
+    private String keynoteId;
 
     @OneToMany(mappedBy = "conference")
     private List<Review> reviews;

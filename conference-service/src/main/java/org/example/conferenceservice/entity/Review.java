@@ -1,4 +1,4 @@
-package org.example.conferenceservice.entities;
+package org.example.conferenceservice.entity;
 
 import jakarta.persistence.*;
 import lombok.*;
